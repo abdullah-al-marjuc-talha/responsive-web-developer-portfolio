@@ -273,3 +273,140 @@ width: 100%;
 }
 
 .contact input
+
+
+/* responsive styles */
+
+.hide
+{
+    display: none;
+    /* visibility: hidden; */
+}
+
+/* mobile device */
+
+@media screen and ( max-width: 667px) 
+{
+
+    .header
+    {
+        background-image: none;
+    }
+
+    .about
+    {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    nav > ul
+    {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .btn-primary
+    {
+        margin-bottom: 15px;
+        flex-direction: column;
+    }
+
+
+    nav,
+
+    /* nav > ul, */
+
+    /* .banner, */
+
+    .skills-container,
+
+    .resume-container,
+
+    .about-info-container,
+
+    .skills-container, .resume-container, footer
+    {
+        flex-direction: column;
+    }
+
+    .profile-pic,
+    .banner,
+    .banner-content
+    {
+        flex-direction: column;
+        margin: 30px;
+    }
+
+    .banner .profile-pic
+    {
+        width: 100%;
+    }
+    /* .banner , */
+    
+    #what-i-do-description
+    {
+        padding: 20px;
+    
+        flex-direction: column;
+    }
+
+    footer 
+    {
+        padding: 10px;
+    }
+
+    .footer-column
+    {
+        width: 100%;
+    }
+
+    .contact input[type= "text"], .contact [type="email"], textarea
+    {
+        width: 75%;
+    }
+
+    .about
+    {
+        text-align: center;
+        padding: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 820px) and (max-width:1180px) 
+{
+
+    .about
+    {
+        margin: 10px;
+        padding: 20px;
+    }
+
+
+    .skills-container, .resume-container
+    {
+        flex-direction: column;
+    }
+
+    #what-i-do-description
+    {
+        padding: 20px;
+    }
+
+    footer 
+    {
+        padding: 30px;
+    }
+
+    .contact input[type= "text"], .contact [type="email"], textarea
+    {
+        width: 75%;
+    }
+
+    .btn-primary
+    {
+        margin-bottom: 15px;
+    }
+    
+}
